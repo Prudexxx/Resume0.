@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESUME</title>
-    <link rel="stylesheet" href="./ss.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="sait1.css">
+    <link rel="stylesheet" href="sait.css">
+    <link rel="stylesheet" href="/accordion.css">
 </head>
 <body>  
     <div class="box0"> 
@@ -25,7 +27,7 @@
                         </div>
                         <div class="Danue">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <span class="name">ptrm00@mail.ru</span>
+                            <span class="name" id="p" >PBrusnitsyn@prm.beeline.ru</span>
                             
                         </div>
                         <a class="knopka" href="Nagrada/foto.html" class="btn">Благодарности и награды</a> 
@@ -40,7 +42,7 @@
             <div class="box2">
                 <h1 class="Fio">Павел Брусницын</h1>
                 <h4 class="otdel">
-                    Ведущий специалист НОКМРГК №7 ООКМР №3
+                    Ведущий специалист  ООКМР №3 НОКМРГК №6
                 </h4>
                 <div class="line"></div>
                     <div class="stasz">
@@ -50,9 +52,28 @@
                          </div>
                         <h4 class="rabota">ОБРАЗОВАНИЕ</h4>
                     </div>
-                        <div class="data">
-                            <div class="god">ВЫСШЕЕ</div>
-                            <div class="sankt">"Санкт-Петербургская государственная лесотехническая академия имени С.М Кирова"</div>
+                        <div class="dat">
+                            <div class="tab">
+                                <button class="tablinks" onclick="openCity(event, 'London')">Высшее</button>
+                                <button class="tablinks" onclick="openCity(event, 'Paris')">Специальность</button>
+                                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Дата окончания </button>
+                              </div>
+                              
+                              <!-- Содержимое вкладки -->
+                              <div id="London" class="tabcontent">
+                                <h3>Сыктывкарский лесотехнический институт(СЛИ).</h3>
+                                <p>"Санкт-Петербургская государственная лесотехническая академия имени С.М Кирова".</p>
+                              </div>
+                              
+                              <div id="Paris" class="tabcontent">
+                                <h3>Инженер-механик</h3>
+                                <p>Специальность: "Машины и оборудование лесного комплекса"</p>
+                              </div>
+                              
+                              <div id="Tokyo" class="tabcontent">
+                                <h3>2008 год</h3>
+                            
+                              </div>
                         </div>
                 <div class="line"></div>
                     <div class="stasz">
@@ -62,57 +83,56 @@
                          </div>
                         <h4 class="rabota">ПАО "ВЫМПЕЛКОМ"</h4>
                     </div>
-                    <div class="God_mes">
-                        <div class="goD">окт 2017 - фев 2018</div>
-                        <div class="spec">Специалист шпд</div>
-
-                    </div>
-                    <div class="God_mes">
-                        <div class="goD">фев 2018 - дек 2019</div>
-                        <div class="spec">Ведущий специалист</div>
-
-                    </div>
-                    <div class="God_mes">
-                        <div class="goD">дек 2019 - апр 2020</div>
-                        <div class="spec">Направление телефонных продаж</div>
-
-                    </div>
-                    <div class="God_mes">
-                        <div class="goD">апр 2020 - окт 2021</div>
-                        <div class="spec">Старший специалист</div>
-
-                    </div>
-                    <div class="God_mes">
-                        <div class="goD">окт 2021 - наст время
+                    <div class="God_me">
+                        <button class="accordion">Октябрь 2021 - настоящее время</button>
+                        <div class="panel">
+                        <p>Ведущий специалист по клиентскому сервису в голосовых каналах ООКМР 3 НОКМРГК 6. Основные обязанности: обслуживание клиентов и продажи продуктов B2C Mobile/FTTB/FMC, наставничество и помощь в адаптации новых сотрудников, тестирование нового ПО и тд.</p>
                         </div>
-                        <div class="spec">Ведущий специалист    </div>
+
+                        <button class="accordion">Апрель 2020 - Октябрь 2021 </button>
+                        <div class="panel">
+                        <p>Старший специалист по обслуживанию клиентов конвергентых услуг. Основные обязанности: обслуживание клиентов и продажи продуктов B2C Mobile/FTTB/FMC.</p>
+                        </div>
+
+                        <button class="accordion">Декабрь 2019 - Апрель 2020 </button>
+                        <div class="panel">
+                        <p>Специалист направления телефонных продаж. Основные обязанности: исходящий обзвон действующим клиентам шпд с предложением конвергентного продукта.</p>
+                        </div>
+                        <button class="accordion">фев 2018 - дек 2019</button>
+                        <div class="panel">
+                        <p>Ведущий специалист. Основные обязанности: обслуживание клиентов и продажи продуктов B2C Mobile/FMC(чашечки)</p>
+                        </div>
+                        <button class="accordion">Октябрь 2017 - Февраль 2018</button>
+                        <div class="panel">
+                        <p>Специалист шпд . Основные обязанности: обслуживание клиентов и продажи продуктов B2C Mobile/FMC(чашечки)</p>
+                        </div>
+
 
                     </div>
+            
                 <div class="line"></div>
                      <div class="stasz">
                         <div class="oput">
                             <div class="fafa">
                                 <i class="fa fa-book" aria-hidden="true"></i></div>
                          </div>
-                        <h4 class="rabota">ЗНАНИЯ ОПЫТ</h4>
+                        <h4 class="rabota">ЗНАНИЯ и ОПЫТ</h4>
                 
                 </div>
-                <div class="Kursy">Отличное знание диагностик, процедур и понимание продукта конвергент, шпд и мобильных услуг.</div>
+                <div class="Kursy">Знание видов бизнеса B2C, FMC, FTTB.<br>Знание специализированных программ(CSM, ASRM, INAC, и много BackOffice)<br>Знание этики поведения внутри компании</div>
                 <div class="line"></div>
                     <div class="stasz">
                         <div class="oput">
                             <div class="fafa">
                                 <i class="fa fa-folder-open" aria-hidden="true"></i></div>
                          </div>
-                        <h4 class="rabota">ПРОЙДЕННЫЕ КУРСЫ</h4>
-                        <button data-modul-btn="my_modul1" class="sertifikat" >Сертификат</button></div>
-                <div data-modul-window="my_modul1" class="modul"  >
-                    <div class="close_modul_windows">&times;</div>
-                    <img src="Pamayt.jpg" width="700px" height="900px" alt="">
-                
+                         <h4 class="rabota">КАЧЕСТВА</h4>
+                   
+                    
+             
                 
                 </div>
-                <div class="Kursy">Языки программировaния HTML,CSS, в процессе Java Script. Феноменальная память 2.0 и другиe.
+                <div class="Kursy">Ответственный, исполнительный, решительный, целеустремленный, дисциплинированный, эмоционально устойчивый, адаптивный.
                 </div>
                 <div class="line"></div>
                     <div class="stasz">
@@ -120,10 +140,10 @@
                             <div class="fafa">
                                 <i class="fa fa-plus" aria-hidden="true"></i></div>
                          </div>
-                        <h4 class="rabota">КАЧЕСТВА </h4>
+                        <h4 class="rabota">Пройденные курсы  </h4>
                 
                 </div>
-                <div class="Kursy">Ответственный, надежный, решительный, целеустремленный, дисциплинированный, эмоционально устойчив, ориентирован на результат, реактивное мышление.</div>
+                <div class="Kursy">В компании очень много курсов прошел, а также прошел курс по программированию HTML, CSS, JavaScript, FotoShop, феноменальная память 2.0 и много  других.</div>
 
                 <div class="line"></div>
                          <div class="stasz">
@@ -133,39 +153,25 @@
                          </div>
                         <h4 class="rabota">О СЕБЕ</h4>
                 
-                </div>
-                <div class="Kursy"> Активный образ жизни. Читаю книги на саморазвитие, тайм - менеджементу. </div>
+                </div>Занимаюсь спортом. Читаю и слушаю аудиозаписи на развитие личности и менеджемента. Создаю одностраничные лендинги.</div>
+                <div class="Kursy"> 
                 <div class="line"></div>
-                         <div class="stasz">
-                        <div class="oput">
-                            <div class="fafa">
-                                <i class="fa fa-area-chart" aria-hidden="true"></i></div>
-                            </div>
-                           <h4 class="rabota">Показатели за 3 месяца</h4>
-                   
-                   </div>
-                   <div class="Kursy">Январь - 166%, Февраль - 146%, Март - 127%. Итого: 150%.</div>
-                                <!-- <i class="fa fa-folder-o " aria-hidden="true"></i></div> -->
-                         <!-- </div> -->
-                        <!-- <h4 class="rabota">ЗАДАНИЕ СОКРАЩЕНИЯ АХТ MOBILA</h4> -->
-                
-                <!-- </div> -->
-                        <!-- <div class="Kursy">Могу предложить два решения: 1 - Увеличить поступления звонков minimum 10, но не более-max 20, для того, чтобы был шанс исправить в лучшую сторону текущие ахт. 2 - Направлять на линию конвергент только тематики вопросов, имеющих быстрое решение. </div> -->
-                <!-- <div class="line"></div> -->
-                         <!-- <div class="stasz"> -->
-                        <!-- <div class="oput"> -->
-                            <!-- <div class="fafa"> -->
-                                <!-- <i class="fa fa-area-chart" aria-hidden="true"></i></div> -->
-                         <!-- </div> -->
-                        <!-- <h4 class="rabota">Показатели за 3 месяца</h4> -->
-                
-                <!-- </div> -->
-                <!-- <div class="Kursy">Январь - 166%, Февраль - 146%, Март - 127%. Итого: 150%.</div> -->
-
+              
+                     
+              
             </div>
         </div>
     </div>
-<script src="SERT.js"></script>
+<script src="/sait.js"></script>
+
+<script src="/SERT.js"></script>
+<script src="/accordion.js"></script>
+<button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"></button>
+
+<script>
+// Получить элемент с помощью id="defaultOpen" и нажмите на нее
+document.getElementById("defaultOpen").click();
+</script>
 
 
 
